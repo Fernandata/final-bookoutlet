@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountViewController: UIViewController {
 
@@ -21,7 +22,25 @@ class CreateAccountViewController: UIViewController {
     
 
     @IBAction func signupClicked(_ sender: UIButton) {
-        print("CREATE ACCOUNT")
+        guard let email = emailTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
+            if let e = error {
+                let alert = UIAlertController(
+                    title: "Dear User", message: "Enter a valid email account or password", preferredStyle: .alert
+                )
+                let action = UIAlertAction(
+                    title: "Thank you!", style: .default, handler: nil
+                )
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+                print("Error")
+            } else {
+                //Go to home screen
+                self.performSegue(withIdentifier: "goToNext", sender: self)
+            }
+        }
+        
     }
     /*
     // MARK: - Navigation

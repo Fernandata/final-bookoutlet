@@ -71,7 +71,7 @@
                                 <rect key="frame" x="102" y="496" width="189" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tEf-vG-PeZ"/>
@@ -81,6 +81,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="fkz-ub-gVy" id="Uls-GI-fec"/>
                         <outlet property="passwordTextField" destination="yEB-ss-6oM" id="csx-OS-B2l"/>
+                        <segue destination="uYe-q7-2oe" kind="show" identifier="goToNext" id="6BF-bF-USj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nV2-HD-uWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -114,7 +115,7 @@
                                 <rect key="frame" x="102" y="450" width="189" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G7N-fI-E5j"/>
@@ -124,11 +125,28 @@
                     <connections>
                         <outlet property="emailTextField" destination="Ldf-x1-mXO" id="5EE-k7-dfT"/>
                         <outlet property="passwordTextField" destination="c2c-ue-UuY" id="F8W-uo-7iw"/>
+                        <segue destination="uYe-q7-2oe" kind="show" identifier="goToNext" id="ZED-Mt-Mqc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rpv-4K-RtH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2072.5190839694656" y="-454.22535211267609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dTa-vT-I9H">
+            <objects>
+                <viewController id="uYe-q7-2oe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3pw-6o-wBd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="16z-BN-hHM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jdz-oa-Ktn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APl-U3-zsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3372" y="-153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oxd-4E-de9">
@@ -149,6 +167,9 @@
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZED-Mt-Mqc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

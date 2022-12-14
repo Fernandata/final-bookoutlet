@@ -15,6 +15,8 @@
 		68EB5D59294A3B3C0008FD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EB5D57294A3B3C0008FD20 /* LaunchScreen.storyboard */; };
 		68EB5D67294A43490008FD20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB5D66294A43490008FD20 /* LoginViewController.swift */; };
 		68EB5D71294A701E0008FD20 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB5D70294A701E0008FD20 /* CreateAccountViewController.swift */; };
+		68EB5D73294A73330008FD20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68EB5D72294A73330008FD20 /* GoogleService-Info.plist */; };
+		68EB5D76294A73FD0008FD20 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 68EB5D75294A73FD0008FD20 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		68EB5D5A294A3B3C0008FD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68EB5D66294A43490008FD20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68EB5D70294A701E0008FD20 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		68EB5D72294A73330008FD20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68EB5D76294A73FD0008FD20 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 				68EB5D55294A3B3C0008FD20 /* Assets.xcassets */,
 				68EB5D57294A3B3C0008FD20 /* LaunchScreen.storyboard */,
 				68EB5D5A294A3B3C0008FD20 /* Info.plist */,
+				68EB5D72294A73330008FD20 /* GoogleService-Info.plist */,
 			);
 			path = BookOutlet;
 			sourceTree = "<group>";
@@ -113,6 +118,9 @@
 			dependencies = (
 			);
 			name = BookOutlet;
+			packageProductDependencies = (
+				68EB5D75294A73FD0008FD20 /* FirebaseAuth */,
+			);
 			productName = BookOutlet;
 			productReference = 68EB5D49294A3B3B0008FD20 /* BookOutlet.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 68EB5D40294A3B3B0008FD20;
+			packageReferences = (
+				68EB5D74294A73FD0008FD20 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 68EB5D4A294A3B3B0008FD20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68EB5D59294A3B3C0008FD20 /* LaunchScreen.storyboard in Resources */,
+				68EB5D73294A73330008FD20 /* GoogleService-Info.plist in Resources */,
 				68EB5D56294A3B3C0008FD20 /* Assets.xcassets in Resources */,
 				68EB5D54294A3B3B0008FD20 /* Main.storyboard in Resources */,
 			);
@@ -390,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68EB5D74294A73FD0008FD20 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68EB5D75294A73FD0008FD20 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68EB5D74294A73FD0008FD20 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68EB5D41294A3B3B0008FD20 /* Project object */;
 }
