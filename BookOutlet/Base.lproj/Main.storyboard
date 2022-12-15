@@ -272,6 +272,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Buy it"/>
+                                <connections>
+                                    <segue destination="r4G-xL-vde" kind="show" id="XUL-70-etZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9KV-Pc-kO9"/>
@@ -289,6 +292,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E16-dn-ZeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5278.6259541984728" y="-154.22535211267606"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jKd-aY-Wmk">
+            <objects>
+                <viewController id="r4G-xL-vde" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fO-Iu-sgK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-vB-TJl">
+                                <rect key="frame" x="175" y="353" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Esv-CY-N9y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y9c-yt-QTI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Adf-h6-13K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6226" y="-151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oxd-4E-de9">
