@@ -11,4 +11,7 @@ struct List: Decodable {
     let title: String
     let author: String
     let image: String
+    let description: String
+    let price: Double
+    let review: String
 }

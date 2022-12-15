@@ -76,6 +76,22 @@ extension ViewController:  UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    //Select Cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetails", sender: nil)
+    }
+    
+    
+    //Pass data
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController {
+            destination.book = books[tableView.indexPathForSelectedRow!.row]
+        }
+    }
+    
+    
+    
+    
 }
  
 
