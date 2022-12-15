@@ -14,5 +14,6 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var imageAPI: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
 }

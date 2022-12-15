@@ -70,6 +70,8 @@ extension ViewController:  UITableViewDelegate, UITableViewDataSource {
         let info = books[indexPath.row]
         cell.titleLabel.text = info.title
         cell.authorLabel.text = info.author
+        let newPrice: String = String(info.price)
+        cell.priceLabel.text = "$ \(newPrice)"
         let string = info.image
         let url = URL(string: string)
         cell.imageAPI.downloaded(from: url!, contentMode: .scaleToFill)
@@ -88,10 +90,7 @@ extension ViewController:  UITableViewDelegate, UITableViewDataSource {
             destination.book = books[tableView.indexPathForSelectedRow!.row]
         }
     }
-    
-    
-    
-    
+        
 }
  
 
