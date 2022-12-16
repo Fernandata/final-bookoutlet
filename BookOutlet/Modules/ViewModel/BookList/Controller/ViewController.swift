@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     private func configureView() {
         activity.startAnimating()
-        viewModel.retrieveDataList(URL: "https://fernando-bookstore.netlify.app/.netlify/functions/api/books") { result in
+        viewModel.retrieveDataList(URL: bookAPI) { result in
             self.viewModel.dataArray = result
             self.data = result
             self.books = self.data

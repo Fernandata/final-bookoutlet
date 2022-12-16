@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68A3063D294CD0A6003786E7 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3063C294CD0A6003786E7 /* AppConstants.swift */; };
 		68EB5D4D294A3B3B0008FD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB5D4C294A3B3B0008FD20 /* AppDelegate.swift */; };
 		68EB5D4F294A3B3B0008FD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB5D4E294A3B3B0008FD20 /* SceneDelegate.swift */; };
 		68EB5D51294A3B3B0008FD20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB5D50294A3B3B0008FD20 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68A3063C294CD0A6003786E7 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		68EB5D49294A3B3B0008FD20 /* BookOutlet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookOutlet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EB5D4C294A3B3B0008FD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68EB5D4E294A3B3B0008FD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68A30639294CD04A003786E7 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D4E294A3B3B0008FD20 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		68A3063A294CD069003786E7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D4C294A3B3B0008FD20 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		68A3063B294CD08A003786E7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				68A3063C294CD0A6003786E7 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		68A3063E294CD0ED003786E7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D52294A3B3B0008FD20 /* Main.storyboard */,
+				68EB5D57294A3B3C0008FD20 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		68A3063F294CD114003786E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D55294A3B3C0008FD20 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68A30640294CD142003786E7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D63294A3D330008FD20 /* Model */,
+				68EB5D62294A3D2C0008FD20 /* View */,
+				68EB5D61294A3D210008FD20 /* ViewModel */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		68A30641294CD39D003786E7 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D80294AE0610008FD20 /* DetailViewController.swift */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		68A30642294CD3E3003786E7 /* BookCustomTable */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D77294A82C00008FD20 /* CustomTableViewCell.swift */,
+			);
+			path = BookCustomTable;
+			sourceTree = "<group>";
+		};
+		68A30643294CD42E003786E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D7E294AA0190008FD20 /* Image.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		68A30644294CD478003786E7 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				68A30646294CD49A003786E7 /* Controller */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		68A30645294CD482003786E7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				68A30648294CD4F7003786E7 /* Login */,
+				68A30647294CD4EC003786E7 /* Signup */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		68A30646294CD49A003786E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D50294A3B3B0008FD20 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68A30647294CD4EC003786E7 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D70294A701E0008FD20 /* CreateAccountViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		68A30648294CD4F7003786E7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				68EB5D66294A43490008FD20 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		68EB5D40294A3B3B0008FD20 = {
 			isa = PBXGroup;
 			children = (
@@ -74,14 +192,13 @@
 		68EB5D4B294A3B3B0008FD20 /* BookOutlet */ = {
 			isa = PBXGroup;
 			children = (
-				68EB5D63294A3D330008FD20 /* Model */,
-				68EB5D62294A3D2C0008FD20 /* View */,
-				68EB5D61294A3D210008FD20 /* ViewModel */,
-				68EB5D4C294A3B3B0008FD20 /* AppDelegate.swift */,
-				68EB5D4E294A3B3B0008FD20 /* SceneDelegate.swift */,
-				68EB5D52294A3B3B0008FD20 /* Main.storyboard */,
-				68EB5D55294A3B3C0008FD20 /* Assets.xcassets */,
-				68EB5D57294A3B3C0008FD20 /* LaunchScreen.storyboard */,
+				68A30643294CD42E003786E7 /* Services */,
+				68A3063F294CD114003786E7 /* Resources */,
+				68A3063E294CD0ED003786E7 /* Storyboard */,
+				68A3063B294CD08A003786E7 /* Constants */,
+				68A3063A294CD069003786E7 /* AppDelegate */,
+				68A30639294CD04A003786E7 /* SceneDelegate */,
+				68A30640294CD142003786E7 /* Modules */,
 				68EB5D5A294A3B3C0008FD20 /* Info.plist */,
 				68EB5D72294A73330008FD20 /* GoogleService-Info.plist */,
 			);
@@ -91,10 +208,8 @@
 		68EB5D61294A3D210008FD20 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				68EB5D7D294A9FD50008FD20 /* Networking */,
-				68EB5D66294A43490008FD20 /* LoginViewController.swift */,
-				68EB5D50294A3B3B0008FD20 /* ViewController.swift */,
-				68EB5D70294A701E0008FD20 /* CreateAccountViewController.swift */,
+				68A30645294CD482003786E7 /* Authentication */,
+				68A30644294CD478003786E7 /* BookList */,
 				68EB5D7B294A8C080008FD20 /* ViewModelList.swift */,
 			);
 			path = ViewModel;
@@ -103,8 +218,8 @@
 		68EB5D62294A3D2C0008FD20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				68EB5D77294A82C00008FD20 /* CustomTableViewCell.swift */,
-				68EB5D80294AE0610008FD20 /* DetailViewController.swift */,
+				68A30642294CD3E3003786E7 /* BookCustomTable */,
+				68A30641294CD39D003786E7 /* BookDetail */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,14 +230,6 @@
 				68EB5D79294A89340008FD20 /* List.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		68EB5D7D294A9FD50008FD20 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				68EB5D7E294AA0190008FD20 /* Image.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +313,7 @@
 				68EB5D78294A82C00008FD20 /* CustomTableViewCell.swift in Sources */,
 				68EB5D7F294AA0190008FD20 /* Image.swift in Sources */,
 				68EB5D71294A701E0008FD20 /* CreateAccountViewController.swift in Sources */,
+				68A3063D294CD0A6003786E7 /* AppConstants.swift in Sources */,
 				68EB5D7A294A89340008FD20 /* List.swift in Sources */,
 				68EB5D67294A43490008FD20 /* LoginViewController.swift in Sources */,
 				68EB5D51294A3B3B0008FD20 /* ViewController.swift in Sources */,
