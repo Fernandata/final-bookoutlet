@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)
                 print("Error")
-                //self.performSegue(withIdentifier: "goToNext", sender: self)
+                
             } else {
                 //Go to home screen
                 self.performSegue(withIdentifier: "goToNext", sender: self)

@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activity: UIActivityIndicatorView!
     
-    var data = [List]()
-    var books = [List]()
+    private var data = [List]()
+    private var books = [List]()
     
     //instancia de modelo de la vista
     var viewModel = ViewModelList()
